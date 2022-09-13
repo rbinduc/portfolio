@@ -1,78 +1,82 @@
 /* media Queries css start */
-
 @media screen and (max-width: 767px) {
   .card-container {
     flex-direction: column;
-  }
-  .card-container article {
-    width: 100%;
-  }
-
-  .card-container article img {
-    height: 400px;
-  }
-
-  .copyright {
-    text-align: left;
+    article {
+      width: 100%;
+      img {
+        height: 400px;
+      }
+    }
   }
 
-  .social-media-icons a {
-    margin-right: 1rem;
+  .footer-container {
+    .copyright {
+      text-align: left;
+    }
+
+    .social-media-icons a {
+      margin-right: 1rem;
+    }
   }
 }
 
 @media screen and (max-width: 991px) {
-  header .menu-icon {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  header {
+    nav {
+      height: auto;
+      background-color: rgba(0, 0, 0, 0.8);
+      .menu:checked ~ ul {
+        display: flex;
+      }
+      .menu-icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      ul {
+        display: none;
+        width: 100%;
+        flex-direction: column;
+        gap: 1rem;
+      }
+    }
   }
-  header nav {
-    height: auto;
-    background-color: rgba(0, 0, 0, 0.8);
+
+  .card-container {
+    article {
+      img {
+        height: 250px;
+      }
+      h3 {
+        font-size: 1.5rem;
+      }
+      .view-project {
+        font-size: 0.85rem;
+      }
+    }
   }
-  header nav ul {
-    display: none;
-    width: 100%;
-    flex-direction: column;
-    gap: 1rem;
-  }
-  .menu:checked ~ ul {
-    display: flex;
-  }
-  section {
-    padding: 1.5rem;
-  }
+
   .contact-form-container {
     max-width: 600px;
     margin: auto;
     text-align: center;
     flex-direction: column;
-  }
-  .contact-info {
-    padding-top: 0;
-  }
-  article img {
-    height: 250px;
-  }
-  article h3 {
-    font-size: 1.5rem;
-  }
-  article .view-project {
-    font-size: 0.85rem;
+    .contact-info {
+      padding-top: 0;
+    }
   }
 
   .about-skills-container {
     flex-direction: column;
     align-items: center;
     gap: 0;
-  }
-
-  .about-me-info {
-    max-width: 100%;
-  }
-  .about-me-info .hire-me {
-    margin: auto;
+    .about-me-info {
+      max-width: 100%;
+      .hire-me {
+        margin: auto;
+      }
+    }
   }
 }
 /* media Queries css ends */
