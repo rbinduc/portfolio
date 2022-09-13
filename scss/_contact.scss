@@ -1,0 +1,80 @@
+.contact-form-container {
+  display: flex;
+  justify-content: space-around;
+  gap: 2rem;
+  p {
+    font-size: 1.3rem;
+    margin-top: 24px;
+  }
+  .contact-info {
+    padding-top: 3rem;
+  }
+  .contact-form {
+    width: 100%;
+    padding: 2rem;
+    background-color: var(--bg-primary-card-color);
+    margin: auto;
+    .form-input {
+      position: relative;
+    }
+    .icon {
+      position: absolute;
+      left: 0.5rem;
+      top: 0.5rem;
+      font-size: 1.5rem;
+    }
+    label {
+      margin-bottom: 0.5rem;
+      display: block;
+      font-size: 1rem;
+      font-weight: 500;
+      text-align: left;
+    }
+    input,
+    textarea {
+      width: 100%;
+      padding: 1rem 1rem 1rem 3.5rem;
+      margin-bottom: 1.5rem;
+      background-color: var(--bg-primary-input-color);
+      border: none;
+      outline: none;
+      color: var(--text-primary-color);
+      font-size: 1rem;
+      min-height: 56px;
+      height: 100%;
+    }
+    button {
+      cursor: pointer;
+      background-image: var(--bg-gradient);
+      border-radius: 50px;
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 1rem;
+      width: 100%;
+      height: 3.5rem;
+      color: var(--text-primary-color);
+      outline: none;
+      border: none;
+      position: relative;
+      transition: all 0.3s ease-in-out;
+      font-weight: 500;
+      &:hover {
+        box-shadow: 0 0 0 5px rgb(191 16 189 / 20%);
+      }
+      .btn-arrow {
+        background-color: var(--bg-secondary-color);
+        color: var(--bg-primary-color);
+        border-radius: 50px;
+        margin-left: 0.5rem;
+        display: inline-flex;
+        width: 3rem;
+        height: 3rem;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        right: 0.3rem;
+      }
+    }
+  }
+}

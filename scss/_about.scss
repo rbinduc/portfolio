@@ -1,0 +1,53 @@
+.about-skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 2rem;
+  .about-me-info {
+    max-width: 500px;
+    width: 100%;
+    h3 {
+      padding-bottom: 3rem;
+    }
+    p {
+      font-size: 1.3rem;
+      margin-top: 1rem;
+      letter-spacing: 0.15rem;
+      padding-bottom: 2rem;
+    }
+    .hire-me {
+      display: flex;
+      justify-content: end;
+      align-items: center;
+      justify-content: center;
+      padding: 1rem;
+      border-radius: 50px;
+      background-image: var(--bg-gradient);
+      font-size: 1.3rem;
+      text-transform: uppercase;
+      transform: scale(1);
+      animation: skills-pulse 2s infinite;
+      transition: all 0.5s ease-in-out;
+      width: 30%;
+      height: 3.5rem;
+    }
+  }
+  .image-skills-container {
+    position: relative;
+    flex-grow: 1;
+  }
+}
+
+@keyframes skills-pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(191, 16, 189, 0.7);
+  }
+
+  70% {
+    box-shadow: 0 0 0 10px rgba(191, 16, 189, 0.2);
+  }
+
+  100% {
+    box-shadow: 0 0 0 0 rgba(191, 16, 189, 0.2);
+  }
+}

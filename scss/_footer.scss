@@ -1,0 +1,33 @@
+.footer-container {
+  display: flex;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.6);
+  height: 80px;
+  position: relative;
+  padding: 1rem;
+  .copyright {
+    flex-grow: 1;
+    text-align: center;
+    p {
+      font-size: 1rem;
+    }
+  }
+  .social-media-icons {
+    position: absolute;
+    right: 0;
+    a {
+      margin-right: 2rem;
+      font-size: 1.3rem;
+      transition: all 0.3s ease-in-out;
+      display: inline-block;
+      &:hover {
+        background: var(--bg-gradient);
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        transform: scale(1.2);
+      }
+    }
+  }
+}

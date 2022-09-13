@@ -1,0 +1,76 @@
+.landing {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  position: relative;
+
+  .heading {
+    font-size: 4rem;
+    font-weight: bold;
+  }
+  .typing {
+    margin-top: 2rem;
+    text-align: center;
+
+    &:after {
+      content: "";
+      animation: changetxt 3s infinite linear;
+      font-size: 2rem;
+      padding: 1rem;
+    }
+
+    @keyframes changetxt {
+      0% {
+        content: "Bindu";
+        background-image: var(--bg-gradient);
+      }
+      100% {
+        content: "Front End Developer";
+        background-image: var(--bg-gradient);
+      }
+    }
+  }
+
+  .arrow-container {
+    width: 100%;
+    position: absolute;
+    bottom: 1rem;
+    font-size: 1.75rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .arrow {
+      animation: arrow 2s infinite;
+      &.a1 {
+        animation-delay: -1s;
+        -webkit-animation-delay: -1s;
+      }
+      &.a2 {
+        animation-delay: -0.5s;
+        -webkit-animation-delay: -0.5s;
+      }
+      &.a3 {
+        animation-delay: 0s;
+        -webkit-animation-delay: 0s;
+      }
+    }
+
+    @keyframes arrow {
+      0% {
+        opacity: 0;
+      }
+      40% {
+        opacity: 1;
+      }
+      80% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 0;
+      }
+    }
+  }
+}
