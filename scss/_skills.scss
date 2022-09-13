@@ -7,8 +7,8 @@
   text-align: center;
   display: block;
   color: #ffffff;
+  box-shadow: rgb(204 17 237) 0px 0px 10px 0px;
 }
-
 .orbit-wrap {
   height: 35em;
   list-style: none;
@@ -103,34 +103,30 @@ ul[class^="ring"] li {
 }
 
 .ring-2 > *:nth-of-type(1) {
-  transform: rotate(47.5deg) translate(7.5em) rotate(-47.5deg);
-}
-
-.ring-2 > *:nth-of-type(2) {
   transform: rotate(95deg) translate(7.5em) rotate(-95deg);
 }
 
-.ring-2 > *:nth-of-type(3) {
+.ring-2 > *:nth-of-type(2) {
   transform: rotate(142.5deg) translate(7.5em) rotate(-142.5deg);
 }
 
-.ring-2 > *:nth-of-type(4) {
+.ring-2 > *:nth-of-type(3) {
   transform: rotate(190deg) translate(7.5em) rotate(-190deg);
 }
 
-.ring-2 > *:nth-of-type(5) {
+.ring-2 > *:nth-of-type(4) {
   transform: rotate(237.5deg) translate(7.5em) rotate(-237.5deg);
 }
 
-.ring-2 > *:nth-of-type(6) {
+.ring-2 > *:nth-of-type(5) {
   transform: rotate(285deg) translate(7.5em) rotate(-285deg);
 }
 
-.ring-2 > *:nth-of-type(7) {
+.ring-2 > *:nth-of-type(6) {
   transform: rotate(332.5deg) translate(7.5em) rotate(-332.5deg);
 }
 
-.ring-2 > *:nth-of-type(8) {
+.ring-2 > *:nth-of-type(7) {
   transform: rotate(380deg) translate(7.5em) rotate(-380deg);
 }
 
