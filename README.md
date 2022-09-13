@@ -1,3 +1,3 @@
-# portfolio
+# My Portfolio
 
-My portfolio built with html, css and scss
+This website is built with html, css and scss
