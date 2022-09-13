@@ -352,7 +352,11 @@
               out through the form and I'll get back to you.
             </p>
           </div>
-          <form class="contact-form">
+          <form
+            class="contact-form"
+            action="https://formspree.io/f/mwkzvgnb"
+            method="POST"
+          >
             <div>
               <label for="firstname">First Name</label>
               <div class="form-input">
@@ -360,6 +364,7 @@
                 <input
                   type="text"
                   id="firstname"
+                  name="firstname"
                   placeholder="Enter your First Name"
                   required
                 />
@@ -370,6 +375,7 @@
                 <input
                   type="email"
                   id="email"
+                  name="email"
                   placeholder="Enter your Email Address"
                   required
                 />
@@ -380,6 +386,7 @@
                 <input
                   type="number"
                   id="telefon-number"
+                  name="phone"
                   placeholder="Enter your Number"
                   required
                 />
@@ -389,6 +396,7 @@
                 <span class="icon"> <i class="fa fa-message icon"></i></span>
                 <textarea
                   id="message"
+                  name="message"
                   cols="50"
                   rows="10"
                   placeholder="Type your message"
